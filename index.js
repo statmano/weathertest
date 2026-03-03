@@ -1,4 +1,4 @@
-const serviceUrl = "https://landltest.edgecompute.app";
+const serviceUrl = "https://mistakenly-optimal-macaque.edgecompute.app";
 
 async function updateWeather(lat = '', lon = '', city = '') {
   const query = lat ? `?lat=${lat}&lon=${lon}&city=${city}` : '';
