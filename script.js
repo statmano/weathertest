@@ -13,7 +13,7 @@ async function updateWeather(lat = '', lon = '', city = '') {
         const data = await response.json();
 
         // 1. Update Text
-        welcomeEl.innerText = `${data.welcomeMessage} ${data.city}`;
+        welcomeEl.innerText = `${data.welcomeMessage}\n${data.city}`;
         tempEl.innerText = `${data.temperature}${data.unit}`;
 
         // 2. Emoji Logic
