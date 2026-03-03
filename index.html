@@ -7,8 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>This is a simple HTML document.</p>
+    <div id="weather-app">
+  <h2 id="welcome-msg">Loading...</h2>
+  <div id="temp-display">
+    <span id="emoji"></span>
+    <span id="temp-value"></span>
+  </div>
+
+  <select id="city-selector">
+    <option value="">-- Change Location --</option>
+    <option value="48.85,2.35,Paris">Paris</option>
+    <option value="35.68,139.76,Tokyo">Tokyo</option>
+    <option value="40.71,-74.00,New York">New York</option>
+  </select>
+</div>
 </body>
 
 <script src="script.js"></script>
