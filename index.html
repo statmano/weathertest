@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <reference rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Fastly Weather Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="weather-app">
-  <h2 id="welcome-msg">Loading...</h2>
-  <div id="temp-display">
-    <span id="emoji"></span>
-    <span id="temp-value"></span>
-  </div>
 
-  <select id="city-selector">
-    <option value="">-- Change Location --</option>
-    <option value="48.85,2.35,Paris">Paris</option>
-    <option value="35.68,139.76,Tokyo">Tokyo</option>
-    <option value="40.71,-74.00,New York">New York</option>
-  </select>
-</div>
+    <div id="weather-container" style="text-align: center; padding: 50px; font-family: sans-serif;">
+        <h2 id="welcome-msg">Detecting location...</h2>
+        
+        <div style="font-size: 3rem; margin: 20px 0;">
+            <span id="emoji">⌛</span>
+            <span id="temp-value">--</span>
+        </div>
+
+        <select id="city-selector">
+            <option value="">-- Change Location --</option>
+            <option value="48.85,2.35,Paris">Paris, France</option>
+            <option value="35.68,139.76,Tokyo">Tokyo, Japan</option>
+            <option value="40.71,-74.00,New York">New York, USA</option>
+        </select>
+        
+        <br><br>
+        <button onclick="updateWeather()">Reset to My Location</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>
